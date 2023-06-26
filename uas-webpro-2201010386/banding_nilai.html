@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membandingkan Nilai</title>
+</head>
+<style>
+    header {
+        text-align: center;
+        margin: 10px;
+    }
+
+    body {
+    display: block;
+    background: #f1f6b9;
+    text-align: center;
+    }
+
+    hr {
+        border-top: 2px solid #51c5e9;
+    }
+
+    .home {
+    background-color: rgb(225, 222, 241);
+    color: hsl(0, 0%, 7%);
+    border: 2px solid rgb(16, 101, 200);
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    border-radius: 15px;
+    text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <br><h2>Program Banding Nilai</h2><br>
+        <hr><br>
+        <p> Masukkan Nilai (Angka) yang ingin dibandingkan, dengan catatan pisahkan nilai dengan tanda koma.
+            Selamat Mencoba!!</p>
+        <p> Sebagai contoh : 1, 2, 3</p> 
+    </header>
+    <script>
+        function bandingkanNilai() {
+            const dataInput = document.getElementById('inputData').value;
+        
+            const dataArray = dataInput.split(',');
+        
+            const angkaArray = dataArray.map(data => parseFloat(data));
+        
+            const nilaiTerbesar = Math.max(...angkaArray);
+            const nilaiTerkecil = Math.min(...angkaArray);
+        
+            const hasilBanding = document.getElementById('hasilBanding');
+            hasilBanding.innerHTML = `<p>Nilai terbesar: ${nilaiTerbesar}</p><p>Nilai terkecil: ${nilaiTerkecil}</p>`;
+        }
+    </script>
+    <div class="program">
+        <br><br>
+        <input type="text" id="inputData" placeholder="Masukkan data"><br><br>
+        <br><button onclick="bandingkanNilai()">Bandingkan</button><br>
+        <div id="hasilBanding"></div><br>
+    </div>
+    <br><br><br><br>
+    <div class="Btnback">
+        <div class="home">
+            <a href="index.html"> Back to Home</a>
+        </div>
+    </div>
+      
+</body>
+</html>

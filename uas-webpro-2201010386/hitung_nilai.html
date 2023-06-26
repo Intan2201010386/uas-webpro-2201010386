@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Nilai</title>
+    <link ref="stylesheet" href="style.css">
+</head>
+<style>
+    .home {
+    background-color: rgb(249, 243, 252);
+    color: hsl(0, 0%, 7%);
+    border: 2px solid rgb(194, 213, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    border-radius: 15px;
+    text-align: center;
+    }
+
+    hr {
+        border-top: 2px solid #51c5e9;
+    }
+    body {
+    display: block;
+    background: #e1f6d8;
+    text-align: center;
+    }
+
+</style>
+<body>
+    <form action="hitung_nilai.php" method="POST">
+        <br><h1 class="card">Menghitung Nilai Akhir</h1><br>
+        <hr>
+        <div><br><br>
+            <input name="tugas" id="nilaiTugas" type="number" placeholder="Masukkan Nilai Tugas"><br><br><br>
+            <input name="uts" id="nilaiUts" type="number" placeholder="Masukkan Nilai UTS"><br><br><br>
+            <input name="uas" id="nilaiUas" type="number" placeholder="Masukkan Nilai UAS"><br><br><br>
+            <input id="hitung" type="submit" placeholder="Hitung" value="Hitung"><br>
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="BtnBack">
+        <div class="home">
+            <a href="index.html"> Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

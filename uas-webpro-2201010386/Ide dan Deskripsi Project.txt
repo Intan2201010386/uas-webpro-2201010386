@@ -1,0 +1,16 @@
+Ide dan Deskripsi Project 
+
+Ide
+-> Pada project UAS ini saya memiliki sebuah ide untuk membuat sebuah aplikasi yang memuat dua menu program.
+pertama program menghitung nilai akhir dan kedua program membandingkan nilai/bilangan terbesar dan terkecil.
+
+Deskripsi Project
+-> Menu program akan ditampilkan pada Home Page yang dimuat pada "index.html" 
+setelah memilih menu program akan dibawa pada halaman program, jika yang dipilih adalah menu hitung nilai maka dari index.html akan dialihkan 
+ke "hitung_nilai.html" disini user akan memasukkan nilai seperti nilai Tugas, UTS, dan UAS. 
+Nilai akan dihitung setelah menekan tombol hitung, "hitung.php" akan memproses serta memberikan hasil akhir berupa nilai akhir dan grade dari nilai-nilai yang sudah dimasukkan.
+bagian "style.css" digunakan untuk mengatur tampilan dari menu "hitung_nilai.html".
+
+Jika menu yang dipilih banding nilai maka yang memproses iyalah "banding_nilai.html" 
+user hanya perlu memasukkan nilai acak atau berurut yang di pisahkan dengan tanda koma, sebagai contoh : 21, 68, 34, 90
+ketika sudah mengetikkan nilai maka bisa diproses dengan mengklik bandingkan, setelahnya akan muncul nilai terbesar serta nilai terkecil dari data yang dimasukkan.
